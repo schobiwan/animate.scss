@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license
+
+Copyright (c) 2013 Daniel Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+$duration: 1s;
+$hinge-duration: 2s;
+$fill-mode: both;
+
+
+body { // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+	-webkit-backface-visibility: hidden;
+}
+
+.animated {
+	-webkit-animation-duration: $duration;
+	   -moz-animation-duration: $duration;
+	     -o-animation-duration: $duration;
+	        animation-duration: $duration;
+	-webkit-animation-fill-mode: $fill-mode;
+	   -moz-animation-fill-mode: $fill-mode;
+	     -o-animation-fill-mode: $fill-mode;
+	        animation-fill-mode: $fill-mode;
+}
+
+// Comment out unused effects for smaller file size (that's the whole point of this SCSS fork)
+@import "effects/bounce";
+@import "effects/bounceIn";
+@import "effects/bounceInDown";
+@import "effects/bounceInLeft";
+@import "effects/bounceInRight";
+@import "effects/bounceInUp";
+@import "effects/bounceOut";
+@import "effects/bounceOutDown";
+@import "effects/bounceOutLeft";
+@import "effects/bounceOutRight";
+@import "effects/bounceOutUp";
+@import "effects/fadeIn";
+@import "effects/fadeInDown";
+@import "effects/fadeInDownBig";
+@import "effects/fadeInLeft";
+@import "effects/fadeInLeftBig";
+@import "effects/fadeInRight";
+@import "effects/fadeInRightBig";
+@import "effects/fadeInUp";
+@import "effects/fadeInUpBig";
+@import "effects/fadeOut";
+@import "effects/fadeOutDown";
+@import "effects/fadeOutDownBig";
+@import "effects/fadeOutLeft";
+@import "effects/fadeOutLeftBig";
+@import "effects/fadeOutRight";
+@import "effects/fadeOutRightBig";
+@import "effects/fadeOutUp";
+@import "effects/fadeOutUpBig";
+@import "effects/flash";
+@import "effects/flip";
+@import "effects/flipInX";
+@import "effects/flipInY";
+@import "effects/flipOutX";
+@import "effects/flipOutY";
+@import "effects/hinge";
+@import "effects/lightSpeedIn";
+@import "effects/lightSpeedOut";
+@import "effects/pulse";
+@import "effects/rollIn";
+@import "effects/rollOut";
+@import "effects/rotateIn";
+@import "effects/rotateInDownLeft";
+@import "effects/rotateInDownRight";
+@import "effects/rotateInUpLeft";
+@import "effects/rotateInUpRight";
+@import "effects/rotateOut";
+@import "effects/rotateOutDownLeft";
+@import "effects/rotateOutDownRight";
+@import "effects/rotateOutUpLeft";
+@import "effects/rotateOutUpRight";
+@import "effects/shake";
+@import "effects/swing";
+@import "effects/tada";
+@import "effects/wiggle";
+@import "effects/wobble";

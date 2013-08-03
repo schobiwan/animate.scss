@@ -1,7 +1,9 @@
-#Animate.css
+#Animate.scss
 *Just-add-water CSS animation*
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+
+**This is a SCSS fork of [https://github.com/daneden/animate.css](animate.css)**
 
 ##Usage
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
@@ -110,7 +112,3 @@ lightSpeedOut
 hinge
 rollIn
 rollOut
-
-## Other Resources
-
-- There's a [Ruby gem](https://github.com/camelmasa/animate-rails) available for Animate.css
